@@ -1,0 +1,12 @@
+Include /etc/ssh/sshd_config.d/*.conf
+
+AuthenticationMethods keyboard-interactive
+KbdInteractiveAuthentication yes
+UsePAM yes
+PrintMotd no
+Banner none
+
+PermitRootLogin no
+
+# Allow client to pass locale environment variables
+AcceptEnv LANG LC_*
